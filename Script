@@ -1,0 +1,17 @@
+local TweenService = game:GetService("TweenService")
+local part = script.Parent
+local TweeningInformation = TweenInfo.new(
+	2,
+	Enum.EasingStyle.Quad,
+	Enum.EasingDirection.Out,
+	753475938457843579348573,
+	true,
+	0
+)
+
+local PartProperties = {
+	Color = Color3.fromRGB(0,255,0)
+}
+
+local Tween = TweenService:Create(part,TweeningInformation,PartProperties)
+Tween:Play()
